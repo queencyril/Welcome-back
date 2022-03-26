@@ -1,0 +1,284 @@
+body, ul, li, h1, h2, a, header{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+header{
+    background-color: rgb(116, 150, 65);
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1; /*to bring text to the front*/
+    top: 0; /*to bring text to the front*/
+    left: 0;
+    right: 0%;
+}
+
+header h1{
+    color: azure;
+    border: 6px dashed white;
+    padding: 7px 10px;
+    display: inline-block;
+    border-radius: 15px;
+}
+.sec-1{
+     position: relative;
+}
+/* to make the image fit the screen*/
+.sec-1 img{
+    height: 500px;
+    width: 100%;
+    object-fit: fill;
+}
+
+.sec-1 .sec-2{
+    background-color:rgb(188, 226, 132);
+    color: beige;
+    padding: 30px;
+    position: absolute;
+    left: 0px;
+    top: 30%;
+}
+
+.sec-1 h2{
+    font-size: 40px; ;
+}
+.sec-1 h2 span{
+     font-size: 70px;
+}
+
+/* everything in sec-1 and sec-2 is concerning the image sec and writeup */
+
+nav{
+    background-color: beige;
+    padding:25px;
+    position: sticky;
+    top: 90px;
+}
+nav ul{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 20%;
+    display: inline-block;
+    font-size: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(116, 150, 65);
+}
+nav li a.sec-4{
+    color: rgb(226, 164, 29);
+}
+/* nav section ends here*/
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color: rgb(20, 100, 5);
+    font-size: 40px;
+    text-align: center;
+}
+article p{
+    line-height: 25px;
+    color: rgb(87, 179, 136);
+}
+/* article section ends here*/
+
+.sec-5{
+    margin: 75px 0;
+    white-space: nowrap;
+}
+.sec-5 li{
+    display: inline-block;
+    width: 30%;
+    margin: 10px 5%;
+} 
+.sec-5 li img{
+    max-width: 100%;
+}
+/* the three image section*/
+
+.sec-6{
+    background-color: beige;
+    text-align: center;
+    padding: 50px 25px;
+    color: rgb(116, 150, 65);
+}
+.sec-6 h2{
+    font-size: 30px;
+}
+.sec-6 p{
+    font-size: 20px;
+}
+.sec-6 p a{
+    color: rgb(226, 164, 29);
+}
+footer{
+    background: rgb(116, 150, 65);
+    color: bisque;
+    text-align: center;
+    padding: 10px;
+}
+
+/*hover effect*/
+nav li a:hover{
+    background-color: rgb(114, 199, 135);
+    padding: 7px;
+}
+
+/* hover effect over the pic to move them up when u hover over them*/
+.sec-5 li:hover{
+    position: relative;
+    top: -6px;
+}
+
+@media screen and (max-width: 700px) {
+    .sec-1 .sec-2 h2{
+       font-size: 19px;
+    }
+    nav li{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sec-1 .sec-2 h2{
+       font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sec-1 .sec-2{
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    }
+    .sec-1 .sec-2 br{
+        display: none;
+    }
+    .sec-1 .sec-2 h2{
+        font-size: 20px;
+    }
+    .sec-1 .sec-2 span{
+        font-size: 1em;
+    }
+
+    .sec-5 li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }        
+}
+
+@media screen and (max-width: 450px) {
+    
+    nav li{
+        font-size: 20px;
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    header
+    {
+        position: relative;
+    }
+    nav{
+        top: 0;
+    }
+}
+
+
+/* Sign up page */
+body.log-1{
+    background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)), url("/pic/login1.jfif");
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hey-1{
+    width: 400px;
+    margin: auto;
+    height: 705px; /*how long the form is*/
+    background-color: azure;
+    border-radius: 4px;   
+}
+.hey-1 h1{ text-align: center;
+            padding-top: 15px;
+            color: rgb(20, 100, 5);
+}
+.hey-1 h4{
+    text-align: center;
+    color: rgb(114, 199, 135);
+}
+
+/* the length of the boxes*/
+form{
+    width: 340px;
+    margin-left: 20px;
+}
+form label{
+    display: flex;
+    margin-top: 5px;
+    font-size: 18px;
+    color:rgb(20, 100, 5)
+}
+form input{
+    width: 100%;
+    padding: 9px;
+    border: none;
+    border: 2px dotted rgb(114, 199, 135);
+    border-radius: 6px;
+    outline: none;
+}
+
+/*for the submit button*/
+input[type="submit"]{
+    width: 335px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(114, 199, 135);
+    color: beige;
+    font-size: 18px;
+}
+
+.hey-3{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 15px;
+    color: rgb(20, 100, 5);
+}
+.hey-3 a{
+    color: rgb(226, 164, 29)
+}
+.hey-4{
+    text-align: center;
+    margin-top: 0;
+    font-size: 18px;
+    color: beige;
+}
+
+.hey-4 a{
+    color: rgb(114, 199, 135);
+}
+
+/*login page*/
+.hi-1{
+    width: 380px;
+    height: 315px;
+    margin: auto;
+    border-radius: 4px;
+}
+
